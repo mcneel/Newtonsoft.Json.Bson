@@ -32,6 +32,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Newtonsoft.Json\Src\Newtonsoft.Json\Newtonsoft.Json.Rhino.csproj" />
   </ItemGroup>
+  <ItemGroup>
+  	<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="all" />
+  </ItemGroup>
   <PropertyGroup Condition="'$(TargetFramework)' == 'net45'">
     <AssemblyTitle>Json.NET BSON</AssemblyTitle>
     <DefineConstants>HAVE_ASYNC;HAVE_BIG_INTEGER;HAVE_CHAR_TO_STRING_WITH_CULTURE;HAVE_DATE_TIME_OFFSET;HAVE_STREAM_READER_WRITER_CLOSE;HAVE_TIME_ZONE_INFO;$(AdditionalConstants)</DefineConstants>
