@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks Condition="'$(LibraryFrameworks)'==''">net45</TargetFrameworks>
+    <TargetFrameworks Condition="'$(LibraryFrameworks)'==''">net462</TargetFrameworks>
     <TargetFrameworks Condition="'$(LibraryFrameworks)'!=''">$(LibraryFrameworks)</TargetFrameworks>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.2</FileVersion>
@@ -35,7 +35,7 @@
   <ItemGroup>
   	<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="all" />
   </ItemGroup>
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net45'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <AssemblyTitle>Json.NET BSON</AssemblyTitle>
     <DefineConstants>HAVE_ASYNC;HAVE_BIG_INTEGER;HAVE_CHAR_TO_STRING_WITH_CULTURE;HAVE_DATE_TIME_OFFSET;HAVE_STREAM_READER_WRITER_CLOSE;HAVE_TIME_ZONE_INFO;$(AdditionalConstants)</DefineConstants>
   </PropertyGroup>
